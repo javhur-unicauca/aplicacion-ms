@@ -1,0 +1,15 @@
+package com.servicios.demo.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/demo")
+public class ProductController {
+    
+    @GetMapping("/product")
+    public String getProduct() {
+        return "This is a product";
+    }
+}
